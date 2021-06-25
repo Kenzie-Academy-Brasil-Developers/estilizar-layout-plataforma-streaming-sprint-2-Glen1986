@@ -16,24 +16,85 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /* VARIÁVEIS */
 :root{
-  
+--BackColor: #141414;   
+--fontColor: #969fb3;
+--imagePx: 186px;
+--fontFamily: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 /*BODY*/
 	body{
-
+		display: flex;
+		flex-direction:column;
+    background-color: var(--BackColor);
+    color:#ccc;
+		font-family: var(--fontFamily)
 	}
 
 /*TOPO*/
 	header.topo{
-		
+    display: flex;
+		flex-direction: column;
+	}
+	header > figure > img{
+		height:30px;
+	}
+	header figure figcaption{
+		display: none;
 	}
 
 /*RODAPÉ*/
-	
+	footer button{
+		background-color: var(--backColor);
+		color: #969fb3;
+		text-transform: uppercase;
+		font-weight: 300;
+		padding: 10px 40px;
+		font-size: 30px
+	}	
+	button:hover{
+		color: #ffffff;
+	}
 
 /*PÁGINA INICIAL*/
 	div.pg-home{
-		
+	display: flex;
+	align-items:center;
+	justify-content: center
 	}
+	section{
+		text-align: center;
+	}
+	header h2{
+		font-size: 68px;
+		font-weight: 300;
+	}
+	section header h2{
+		text-align: center;
+	}
+	section > ul figure img{
+		height: var(--imagePx)
+	}
+	ul.users{
+		display:flex;
+		flex-direction: column;
+		list-style: none;
+		margin-bottom: 40px;
+	}
+	li figure figcaption{
+		display: none;
+	}
+		ul li img:hover{
+		border: 1px solid white;
+		color: #ffffff;
+	}
+	ul.users >li h3:hover{
+	color: #ffffff;
+	}
+
+	@media screen and (min-width: 800px){
+	ul.users{
+		flex-direction: row;
+	}
+}
 
