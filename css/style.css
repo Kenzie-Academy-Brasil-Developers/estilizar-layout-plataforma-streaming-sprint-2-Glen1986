@@ -36,6 +36,14 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
     display: flex;
 		flex-direction: column;
 	}
+	header h2{
+		color: white;
+		font-weight: 400;
+		font-size: 68px;
+	}
+	section header h2{
+		text-align: center;
+	}
 	header > figure > img{
 		height:30px;
 	}
@@ -50,7 +58,8 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		text-transform: uppercase;
 		font-weight: 300;
 		padding: 10px 40px;
-		font-size: 30px
+		font-size: 30px;
+		border: 2px solid white;
 	}	
 	button:hover{
 		color: #ffffff;
@@ -65,13 +74,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	section{
 		text-align: center;
 	}
-	header h2{
-		font-size: 68px;
-		font-weight: 300;
-	}
-	section header h2{
-		text-align: center;
-	}
+
 	section > ul figure img{
 		height: var(--imagePx)
 	}
@@ -88,7 +91,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		border: 1px solid white;
 		color: #ffffff;
 	}
-	ul.users >li h3:hover{
+	ul li img,ul.users >li h3:hover{
 	color: #ffffff;
 	}
 
