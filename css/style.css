@@ -78,13 +78,15 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	}
 
 	section > ul figure img{
-		height: var(--imagePx)
+		height: var(--imagePx);
 	}
 	ul.users{
 		display:flex;
 		flex-direction: column;
 		list-style: none;
 		margin-bottom: 40px;
+		max-width: var(--boxWidth);
+		margin-left: -13%;
 	}
 	li figure figcaption{
 		display: none;
@@ -93,7 +95,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		border: 1px solid white;
 		color: #ffffff;
 	}
-	ul li img,ul.users >li h3:hover{
+	ul li img:hover,ul.users >li h3{
 	color: #ffffff;
 	}
 
