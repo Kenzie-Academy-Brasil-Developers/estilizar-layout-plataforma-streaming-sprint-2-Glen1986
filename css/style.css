@@ -19,6 +19,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 --BackColor: #141414;   
 --fontColor: #969fb3;
 --imagePx: 186px;
+--boxWidth: 858px;
 --fontFamily: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
@@ -68,8 +69,9 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 /*PÁGINA INICIAL*/
 	div.pg-home{
 	display: flex;
-	align-items:center;
-	justify-content: center
+	justify-content: center;
+  width: var(--boxWidth);
+	margin:0 auto;
 	}
 	section{
 		text-align: center;
