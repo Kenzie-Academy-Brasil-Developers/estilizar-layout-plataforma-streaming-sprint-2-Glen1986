@@ -78,8 +78,10 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	}
 	.users li{
 		height: var(--imagePx);
-		width: var(--imagePx)
-
+		width: var(--imagePx);
+	}
+	.users li figure{
+		margin:0;
 	}
 	section > ul figure img{
 		border: 1px solid transparent;
@@ -112,6 +114,10 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	ul.users{
 		flex-direction: row;
 		width: var(--boxWidth);
+		margin-bottom:6rem;
+	}
+	footer{
+		margin:auto;
 	}
 }
 
