@@ -99,14 +99,20 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	li figure figcaption{
 		display: none;
 	}
+	.users li h3{
+		color: var(--fontColor);
+	}
 		ul li img:hover{
 		border: 1px solid white;
 		color: #ffffff;
 	}
-	ul li img:hover,ul.users >li h3{
-	color: #ffffff;
+	  .users li:hover .nome{ 
+	color:#ffffff;
 	}
 
+	.nome:hover{ 
+	color:#ffffff;
+	}
 	@media screen and (min-width: 768px){
 		.pg-home{
 			flex-direction:row;
