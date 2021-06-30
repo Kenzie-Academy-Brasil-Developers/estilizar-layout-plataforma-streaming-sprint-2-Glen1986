@@ -29,7 +29,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		flex-direction:column;
     background-color: var(--BackColor);
     color:#ccc;
-		font-family: var(--fontFamily)
+		font-family: var(--fontFamily);
 	}
 
 /*TOPO*/
@@ -39,8 +39,9 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	}
 	header h2{
 		color: white;
-		font-weight: 400;
+		font-weight: 200;
 		font-size: 68px;
+		margin: 0;
 	}
 	section header h2{
 		text-align: center;
@@ -67,26 +68,31 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	}
 
 /*PÁGINA INICIAL*/
-	div.pg-home{
-	display: flex;
-	justify-content: center;
-  width: var(--boxWidth);
-	margin:0 auto;
+	.pg-home{
+	margin: auto;
+	padding: 0 auto;
 	}
 	section{
 		text-align: center;
+		align-items:center;
 	}
-
-	section > ul figure img{
+	.users li{
 		height: var(--imagePx);
+		width: var(--imagePx)
+
 	}
-	ul.users{
+	section > ul figure img{
+		border: 1px solid transparent;
+		width: 100%;
+	}
+	.users{
 		display:flex;
-		flex-direction: column;
+		flex-direction:column;
+		justify-content:center;
 		list-style: none;
-		margin-bottom: 40px;
-		max-width: var(--boxWidth);
-		margin-left: -13%;
+	}
+	.users li{
+		margin:0 auto;
 	}
 	li figure figcaption{
 		display: none;
@@ -99,9 +105,13 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	color: #ffffff;
 	}
 
-	@media screen and (min-width: 800px){
+	@media screen and (min-width: 768px){
+		.pg-home{
+			flex-direction:row;
+		}	
 	ul.users{
 		flex-direction: row;
+		width: var(--boxWidth);
 	}
 }
 
